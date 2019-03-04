@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container{
+    font-family: Josafin Sans,Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(./images/bg.jpg) no-repeat center;
+}
+
+.card-w {
+    height: 600px;
+    width: 450px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .5s;
+    border-radius: 10px;
+    transform: translate(-50% ,-50%);
+    
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(./images/bg.jpg) no-repeat center;
+}
+
+.card-w:hover {
+    box-shadow: 0 0 20px #fff;
+    
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(190deg, rgba(21,199,30,.8) 50%, rgba(233,67,67,.9)0);
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+    margin-top: 15px;
+    border: 2px solid #fff;
+    padding: 7px;
+    box-shadow: 0 0 50px rgba(0,0,0,.5);
+}
+
+.card-h1 {
+    font-family: 'Source Code Pro', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 3px;
+    background: linear-gradient(#0a9751, #06831b);
+    width: 60%;
+    padding: 5px;
+    transform: perspective(1000px) skewX(-20deg) rotateY(40deg);
+}
+
+.card-p {
+    color: #ddd;
+    font-size: 18px;
+    width: 90%;
+    line-height: 30px;
+    padding: 10px;
+    position: relative;
+}
+
+.card-p i {
+    font-style: italic;
+    font-size: 25px;
+    position: absolute;
+}
+
+.card-p::first-letter{
+    margin-left: 32px;
+}
+
+.card-i{
+    list-style: none;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.card-i i {
+    font-size: 25px;
+    color: #fff;
+    transition: .5s;
+}
+
+.card-i i:hover {
+    color: lightgreen ;
+}
+
+.card-b {
+    border: none;
+    border-radius: 50px;
+    width: 150px;
+    height: 35px;
+    margin-bottom: 15px;
+    color: #fff;
+    background: linear-gradient(#6837ee, #0d2b7e);
+    text-transform: uppercase;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    transition: .5s;
+}
+
+.card-b:hover{
+    transform: scale(1.1);
+}
+
+.card-b a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-b a:visited{
+    color: #fff;
+}
